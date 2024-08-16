@@ -1,9 +1,8 @@
 import Link from "next/link";
-import Image from "next/image";
 
-import styles from "./menuPosts.module.css";
+import styles from "./menuMiniPosts.module.css";
 
-const MenuPosts = ({ key, item }) => {
+const MenuMiniPosts = ({ key, item }) => {
   let traducao;
   if (item?.catSlug === "fashion") traducao = "Moda";
   if (item?.catSlug === "culture") traducao = "Cultura";
@@ -15,16 +14,6 @@ const MenuPosts = ({ key, item }) => {
   return (
     <div className={styles.items} key={key}>
       <Link href={`/posts/${item?.slug}`} className={styles.item}>
-        {item?.img && (
-          <div className={styles.imageContainer}>
-            <Image
-              src={item?.img}
-              alt={item?.title}
-              fill
-              className={styles.image}
-            />
-          </div>
-        )}
         <div className={styles.textContainer}>
           <span className={`${styles.category} ${styles[item?.catSlug]}`}>
             {traducao}
@@ -43,4 +32,4 @@ const MenuPosts = ({ key, item }) => {
   );
 };
 
-export default MenuPosts;
+export default MenuMiniPosts;

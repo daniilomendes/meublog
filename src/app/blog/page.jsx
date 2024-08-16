@@ -19,7 +19,7 @@ const BlogPage = ({ searchParams }) => {
       <h1 className={styles.title}>{traducao}</h1>
       <div className={styles.content}>
         <CardList page={page} cat={cat} />
-        <Menu />
+        <Menu page={page} cat={cat} />
       </div>
     </div>
   );
