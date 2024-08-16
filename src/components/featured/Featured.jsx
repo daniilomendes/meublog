@@ -23,7 +23,7 @@ const Featured = () => {
             Sinta-se à vontade para deixar comentários nos posts que você gostar
             e se conectar comigo nas redes sociais.
           </p>
-          <button className={styles.button}>Veja mais!</button>
+          <p className={styles.postDesc}>Continue descendo!</p>
         </div>
       </div>
     </div>
