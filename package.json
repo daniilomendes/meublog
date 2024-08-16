@@ -20,6 +20,8 @@
     "react-quill": "^2.0.0"
   },
   "devDependencies": {
+    "@types/node": "22.4.0",
+    "@types/react": "18.3.3",
     "prisma": "^5.18.0"
   }
 }
