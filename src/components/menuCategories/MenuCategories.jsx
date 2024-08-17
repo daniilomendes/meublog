@@ -22,6 +22,7 @@ const MenuCategories = async () => {
         <Link
           href={`/blog?cat=${item.slug}`}
           className={`${styles.categoryItem} ${styles[item.slug]}`}
+          key={item._id}
         >
           {item.title}
         </Link>
